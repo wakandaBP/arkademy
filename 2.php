@@ -1,7 +1,7 @@
 <?php
 
-$username = usernameCheck("useRnam");
-$password = passwordCheck("paS5word!");
+$username = usernameCheck("usernam");
+$password = passwordCheck("paS5word@");
 echo "Username : " . $username;
 echo "\nPassword : " . $password;
 
@@ -15,7 +15,7 @@ function usernameCheck($username){
 
 function passwordCheck($pass){
     $status = "Tidak Cocok!";
-    if (preg_match('/^(?=.*\d)(?=.*[@#\-_$%^&+=§!\?])(?=.*[a-z])(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{9}$/', $pass)){
+    if (preg_match('/^(?=.*\d)(?=.*[@])(?=.*[a-z])(?=.*[A-Za-z])[0-9A-Za-z!@#$%]{9}$/', $pass)){
         $status = "Cocok!";
     }
     return $status;
