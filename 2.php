@@ -1,7 +1,7 @@
 <?php
 
 $username = usernameCheck("usernam");
-$password = passwordCheck("paS5word@");
+$password = passwordCheck("paS5w&rd@");
 echo "Username : " . $username;
 echo "\nPassword : " . $password;
 
